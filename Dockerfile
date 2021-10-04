@@ -5,7 +5,8 @@ ARG BUILD_DATE=""
 USER root
 
 WORKDIR /tmp/
-RUN apt-get update -qqy \
+RUN sex -xe \
+  && apt-get update -qqy \
   && apt-get -qqy install curl software-properties-common \
   && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
   && apt-get -qqy install nodejs \
