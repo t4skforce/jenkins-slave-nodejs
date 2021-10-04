@@ -5,7 +5,7 @@ ARG BUILD_DATE=""
 USER root
 
 WORKDIR /tmp/
-RUN sex -xe \
+RUN set -xe \
   && apt-get update -qqy \
   && apt-get -qqy install curl software-properties-common \
   && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
