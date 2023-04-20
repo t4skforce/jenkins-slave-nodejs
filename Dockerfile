@@ -1,6 +1,6 @@
 FROM t4skforce/jenkins-slave
 
-ARG BUILD_DATE="2023-04-18T15:04:04Z"
+ARG BUILD_DATE="2023-04-20T20:53:16Z"
 
 USER root
 
